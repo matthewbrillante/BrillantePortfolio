@@ -26,6 +26,11 @@ const Navbar = () => {
           </a>
         </li>
         <li style={styles.navItem}>
+          <a href="#certifications" style={styles.navLink}>
+            Certification & Seminars
+          </a>
+        </li>
+        <li style={styles.navItem}>
           <a href="#contact" style={styles.navLink}>
             Contact
           </a>
@@ -34,6 +39,7 @@ const Navbar = () => {
     </nav>
   );
 };
+
 
 // Inline Styles
 const styles = {

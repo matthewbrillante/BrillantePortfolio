@@ -1,0 +1,87 @@
+.certifications-container {
+    padding: 50px 10%;
+    text-align: center;
+    background: linear-gradient(135deg, #5A6D7C 0%, #C6D2E1 100%); /* Soft gradient background */
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    box-shadow: inset 0 0 150px rgba(0, 0, 0, 0.1); /* Inner shadow for depth */
+    border-radius: 12px; /* Soft rounded edges for the container */
+}
+
+.certifications-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+}
+
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Flexible grid layout */
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.cert-card {
+    background-color: rgba(255, 255, 255, 0.8); /* Soft, semi-transparent background */
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* More pronounced shadow for depth */
+    padding: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    backdrop-filter: blur(10px); /* Soft blur background effect */
+    max-width: 90%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.cert-card:hover {
+    transform: translateY(-8px); /* Slight upward movement on hover */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15); /* Deeper shadow effect */
+    filter: brightness(1.1); /* Slight brighten effect on hover */
+}
+
+.cert-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    object-fit: contain; /* Ensure the image fits the container without distortion */
+}
+
+.cert-title {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: capitalize; /* Capitalize title for a neat look */
+}
+
+.download-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.download-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.cert-card .download-btn {
+    margin-top: 10px;
+}
